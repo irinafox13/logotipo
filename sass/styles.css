@@ -177,12 +177,12 @@ svg {
 
 .slick-arrow.slick-prev {
   right: 55px;
-  background: url("../../img/release-slider/prev.png") 0 0/100% no-repeat;
+  background: url("../img/release-slider/prev.png") 0 0/100% no-repeat;
 }
 
 .slick-arrow.slick-next {
   right: 15px;
-  background: url("../../img/release-slider/next.png") 0 0/100% no-repeat;
+  background: url("../img/release-slider/next.png") 0 0/100% no-repeat;
 }
 
 @-webkit-keyframes arrow {
@@ -428,10 +428,15 @@ svg {
   font-size: 14px;
   font-weight: 600;
   margin-right: 75px;
-  -webkit-transition: color .2s linear .2s, -webkit-box-shadow .2s linear .2s;
-  transition: color .2s linear .2s, -webkit-box-shadow .2s linear .2s;
-  transition: box-shadow .2s linear .2s, color .2s linear .2s;
-  transition: box-shadow .2s linear .2s, color .2s linear .2s, -webkit-box-shadow .2s linear .2s;
+  -webkit-transition: color .2s linear .2s,
+ -webkit-box-shadow .2s linear .2s;
+  transition: color .2s linear .2s,
+ -webkit-box-shadow .2s linear .2s;
+  transition: box-shadow .2s linear .2s,
+ color .2s linear .2s;
+  transition: box-shadow .2s linear .2s,
+ color .2s linear .2s,
+ -webkit-box-shadow .2s linear .2s;
 }
 
 .slider__wrapper-button:hover {
