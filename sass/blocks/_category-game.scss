@@ -1,0 +1,71 @@
+.category-game {
+   margin-bottom: 110px;
+}
+.game-slider {
+   &__row {
+      display: flex;
+      margin-bottom: 10px;
+   }
+
+   &__item {
+      height: 265px;
+      background-color: $bg;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      transition: transform .23s linear;
+      & + & {
+         margin-left: 10px;
+      }
+      &:hover {
+         transform: scale(.98, .98);
+         & .game-slider__item-genre--link {
+            color: $primary-color;
+            &:after {
+               animation: arrow-slider .8s linear infinite alternate;
+            }
+         }
+      }
+
+      &-link {
+         display: block;
+         height: 100%;
+         
+      }
+      
+      &-big {
+         flex-basis: 58%;
+      }
+
+      &-genre {
+         height: 100%;
+         display: flex;
+         justify-content: flex-end;
+         align-items: flex-end;
+         position: relative;
+         z-index: 3;
+
+         &--link {
+            display: block;
+            padding-right: 50px;
+            margin-bottom: 25px;
+            color: $secondary-color;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color .3s linear;
+
+            &:after {
+               content: url(../../img/game-slider/arrow.png);
+               position: absolute;
+               bottom: 20px;
+               right: 20px;
+            }
+         }
+      }     
+
+      &-small {
+         flex-basis: 41%;
+      }
+   }   
+}

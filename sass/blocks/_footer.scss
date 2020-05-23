@@ -1,0 +1,103 @@
+.footer {
+   margin-top: 90px;
+   
+   &-line {
+      width: 100%;
+      height: 1px;
+      background-color: $primary-color;
+      opacity: 0.2;
+   }
+}
+
+.footer-section {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 150px;
+      .section {      
+         & + & {
+           margin-left: 15px; 
+         }   
+         
+      }
+		&__block {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+		}
+
+		&__social {
+         display: flex;
+         margin-top: 30px;
+
+         &-icon {
+            & + & {
+               margin-left: 25px;
+            }
+            svg:hover {
+               fill: $secondary-color;
+            }
+		   }
+      }
+		&__item {
+         padding-bottom: 8px;
+		}
+
+		&__link {
+         color: $font-footer;
+         font-size: 12px;
+         font-weight: 300;
+         
+         &:hover {
+            color: $secondary-color;
+            text-decoration: underline;
+         }
+		}
+
+		&__game-title {
+         color: $jogos-footer;
+         &:after {
+            background-color: $jogos-footer;
+         }         
+      }
+      &__publishers-title {
+         color: $editires-footer;
+         &:after {
+            background-color: $editires-footer;
+         }         
+      }
+      &__categories-title {
+         color: $categorias-footer;
+         &:after {
+            background-color: $categorias-footer;
+         }         
+      }
+      &__about-title {
+         color: $sobre-footer;
+         &:after {
+            background-color: $sobre-footer;
+         }         
+      }
+      &__period-title {
+         color: $semana-footer;
+         &:after {
+            background-color: $semana-footer;
+         }         
+		}		
+}
+.footer-copyright {
+   height: 105px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: $secondary-color;
+   font-size: 12px;
+   font-weight: 300;
+
+   &__link {
+      color: inherit;
+      &:hover {
+         color: $primary-color;
+         text-decoration: underline;
+      }
+   }
+}
